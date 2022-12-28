@@ -4,13 +4,18 @@ import './CardsView.css';
 
 export default function CardsView({cards}) {
   
-  console.log('props', cards);
-  const aaa = [...cards];
+  // console.log('props', cards);
+  const arrItems = [...cards];
 
-
+//<h1 key={index}>{item.name}</h1>)
   return (
-   <div className="border card">
-    element {aaa.map((item, index) => (<h1 key={index}>{item.name}</h1>))}
-   </div>
+   <>
+   {arrItems.map((item, index) => {
+        // console.log('index', index);
+        // const key = index;
+        return <ShopCard item={item} key={index}/>
+      }
+    )} 
+   </>
   )
 }

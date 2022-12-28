@@ -5,7 +5,6 @@ const App = () => {
 
   return (
     <>
-      <h1>konst</h1>
       <Store/>
     </>
   );
