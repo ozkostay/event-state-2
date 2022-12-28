@@ -1,0 +1,9 @@
+.switchView {
+  background-color: aqua;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon {
+  background-color: blue;
+}
